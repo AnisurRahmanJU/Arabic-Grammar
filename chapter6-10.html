@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>অধ্যায় ৬-১০: আরবী ব্যাকরণের উন্নত পাঠ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #059669; --secondary: #10b981; --bg: #f0fdf4; }
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: var(--bg); color: #1e293b; scroll-behavior: smooth; }
+        .arabic { font-family: 'Amiri', serif; direction: rtl; font-size: 2.8rem; line-height: 1.8; color: #064e3b; }
+        .clickable-word { cursor: pointer; position: relative; display: inline-block; border-bottom: 3px dashed var(--primary); padding: 0 5px; transition: 0.3s; }
+        .clickable-word:hover { background-color: #d1fae5; transform: translateY(-2px); }
+        .lesson-card { background: white; border-radius: 2.5rem; padding: 4rem; margin-bottom: 5rem; box-shadow: 0 20px 50px rgba(0,0,0,0.05); border-top: 15px solid var(--primary); position: relative; overflow: hidden; }
+        .rule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0; }
+        .rule-item { background: #f9fafb; padding: 2rem; border-radius: 1.5rem; border: 1px solid #e5e7eb; border-left: 8px solid var(--primary); }
+        .example-box { background: #f0fdf4; border-radius: 1.5rem; padding: 2rem; margin-top: 2rem; display: flex; align-items: center; justify-content: space-between; border: 2px solid #bcf0da; }
+        .table-custom { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 1.2rem; }
+        .table-custom th, .table-custom td { padding: 1.5rem; border: 1px solid #e5e7eb; text-align: center; }
+        .table-custom th { background: var(--primary); color: white; }
+        .nav-btn { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="p-6 md:p-16">
+
+    <div class="max-w-6xl mx-auto">
+        <header class="text-center mb-24">
+            <h1 class="text-7xl font-black text-emerald-900 mb-8">এরাবিক গ্রামার প্রো</h1>
+            <p class="text-3xl text-emerald-700 font-medium">মডিউল ২: অধ্যায় ০৬ থেকে ১০ (পূর্ণাঙ্গ গাইড)</p>
+            <div class="flex justify-center gap-4 mt-8">
+                <span class="px-6 py-2 bg-emerald-100 text-emerald-800 rounded-full font-bold">উন্নত টপিক</span>
+                <span class="px-6 py-2 bg-blue-100 text-blue-800 rounded-full font-bold">বিশদ বিশ্লেষণ</span>
+            </div>
+        </header>
+
+        <section id="ch6" class="lesson-card">
+            <h2 class="text-5xl font-bold text-emerald-900 mb-10 border-b-4 border-emerald-100 pb-6">০৬. ইশমুল ইশারাহ ও মুশারুন ইলাইহি</h2>
+            <div class="prose prose-xl max-w-none text-slate-700 leading-loose">
+                <p class="mb-8">কাছের বা দূরের কোনো বস্তুকে নির্দেশ করার জন্য যে ইসম ব্যবহৃত হয় তাকে <strong>ইসমুল ইশারাহ (Demonstrative Pronoun)</strong> বলে। আর যাকে নির্দেশ করা হয় তাকে <strong>মুশারুন ইলাইহি</strong> বলে।</p>
+                
+                
+
+                <div class="rule-grid">
+                    <div class="rule-item">
+                        <h4 class="font-bold text-xl mb-3">১. নৈকট্য (Near)</h4>
+                        <p>কাছের কিছুর জন্য: هَذَا (এটি - পুং), هَذِهِ (এটি - স্ত্রী)।</p>
+                    </div>
+                    <div class="rule-item">
+                        <h4 class="font-bold text-xl mb-3">২. দূরত্ব (Far)</h4>
+                        <p>দূরের কিছুর জন্য: ذَلِكَ (ওটি - পুং), تِلْكَ (ওটি - স্ত্রী)।</p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <p class="text-2xl font-bold">এটি একটি কলম</p>
+                    <div class="arabic"><span class="clickable-word" data-info="ইসমুল ইশারাহ: এটি">هَذَا</span> <span class="clickable-word" data-info="খবর: কলম">قَلَمٌ</span></div>
+                </div>
+                <div class="example-box">
+                    <p class="text-2xl font-bold">এই কলমটি (মুশারুন ইলাইহি)</p>
+                    <div class="arabic"><span class="clickable-word" data-info="ইসমুল ইশারাহ">هَذَا</span> <span class="clickable-word" data-info="মুশারুন ইলাইহি: আল যুক্ত হয়ে নির্দিষ্ট হয়েছে">الْقَلَمُ</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ch7" class="lesson-card" style="border-top-color: #3b82f6;">
+            <h2 class="text-5xl font-bold text-blue-900 mb-10 border-b-4 border-blue-100 pb-6">০৭. দমীর (Pronouns) - মুনফাসিল ও মুত্তাসিল</h2>
+            <div class="prose prose-xl max-w-none text-slate-700">
+                <p class="mb-8">দমীর বা সর্বনাম দুই প্রকারের হয়:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-8">
+                    <div class="p-8 bg-blue-50 rounded-3xl">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">১. দমীরুন মুনফাসিল (বিচ্ছিন্ন)</h3>
+                        <table class="table-custom mt-4">
+                            <tr><th>আরবী</th><th>অর্থ</th></tr>
+                            <tr><td class="arabic text-2xl">أَنَا</td><td>আমি</td></tr>
+                            <tr><td class="arabic text-2xl">نَحْنُ</td><td>আমরা</td></tr>
+                            <tr><td class="arabic text-2xl">أَنْتُمْ</td><td>তোমরা</td></tr>
+                        </table>
+                    </div>
+                    <div class="p-8 bg-slate-100 rounded-3xl">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4">২. দমীরুন মুত্তাসিল (সংযুক্ত)</h3>
+                        <table class="table-custom mt-4">
+                            <tr><th>আরবী</th><th>অর্থ</th></tr>
+                            <tr><td class="arabic text-2xl">ـنَا</td><td>আমাদের (যেমন: رَبُّنَا)</td></tr>
+                            <tr><td class="arabic text-2xl">ـكَ</td><td>তোমার (যেমন: بَيْتُكَ)</td></tr>
+                            <tr><td class="arabic text-2xl">ـهَا</td><td>তার (স্ত্রী)</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ch8" class="lesson-card" style="border-top-color: #8b5cf6;">
+            <h2 class="text-5xl font-bold text-violet-900 mb-10 border-b-4 border-violet-100 pb-6">০৮. ইসমুন মাউসুলাহ (Relative Pronouns)</h2>
+            <div class="prose prose-xl max-w-none text-slate-700">
+                <p class="mb-8">যে সব ইসম দুটি বাক্যকে সংযুক্ত করতে ব্যবহৃত হয়, তাদের <strong>ইসমুল মাউসুলাহ</strong> বলে (যেমন: যিনি, যারা, যা)।</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="example-box">
+                        <p class="text-xl">যিনি / যে (পুং)</p>
+                        <div class="arabic">الَّذِي</div>
+                    </div>
+                    <div class="example-box">
+                        <p class="text-xl">যিনি / যে (স্ত্রী)</p>
+                        <div class="arabic">الَّتِي</div>
+                    </div>
+                </div>
+
+                <div class="example-box mt-10">
+                    <p class="text-2xl font-bold italic">উদাহরণ: আমি তাকে চিনি যে গিয়েছে</p>
+                    <div class="arabic">الَّذِي ذَهَبَ</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ch9" class="lesson-card" style="border-top-color: #ec4899;">
+            <h2 class="text-5xl font-bold text-pink-900 mb-10 border-b-4 border-pink-100 pb-6">০৯. মাউসুফ ও সিফাত (Adjective Phrases)</h2>
+            <div class="prose prose-xl max-w-none text-slate-700">
+                <p class="mb-8">যখন কোনো ইসমের দোষ বা গুণ বর্ণনা করা হয়, তাকে <strong>সিফাত</strong> বলে এবং যার গুণ বর্ণনা করা হয় তাকে <strong>মাউসুফ</strong> বলে।</p>
+                
+                
+
+                <div class="rule-item mb-8">
+                    <h4 class="font-bold text-xl mb-3">শর্তসমূহ:</h4>
+                    <p>মাউসুফ ও সিফাত ৪টি বিষয়ে মিল থাকতে হবে: ১. লিঙ্গ, ২. বচন, ৩. নির্দিষ্টতা (মারিফা/নাকিরা), ৪. এরব (হরকত)।</p>
+                </div>
+
+                <div class="example-box">
+                    <p class="text-2xl font-bold">একটি সুন্দর বাগান</p>
+                    <div class="arabic"><span class="clickable-word" data-info="মাউসুফ: বাগান">جَنَّةٌ</span> <span class="clickable-word" data-info="সিফাত: সুন্দর">جَمِيلَةٌ</span></div>
+                </div>
+                <div class="example-box">
+                    <p class="text-2xl font-bold">ভালো ছাত্রটি</p>
+                    <div class="arabic"><span class="clickable-word" data-info="মারিফা মাউসুফ">الطَّالِبُ</span> <span class="clickable-word" data-info="মারিফা সিফাত">الصَّالِحُ</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ch10" class="lesson-card" style="border-top-color: #f59e0b;">
+            <h2 class="text-5xl font-bold text-amber-900 mb-10 border-b-4 border-amber-100 pb-6">১০. মুদাফ ও মুদাফুন ইলাইহি (Idhafah)</h2>
+            <div class="prose prose-xl max-w-none text-slate-700">
+                <p>মালিকানা বা সম্বন্ধ বোঝাতে ইদাফাত ব্যবহৃত হয়। এর দুটি অংশ থাকে:</p>
+                
+               
+
+                <ul class="list-disc ml-10 space-y-4">
+                    <li><strong>মুদাফ:</strong> যেটির মালিকানা বোঝানো হচ্ছে। এতে ال এবং তানউইন হয় না।</li>
+                    <li><strong>মুদাফুন ইলাইহি:</strong> যে মালিক। এটি সব সময় <strong>মাজরুর (জের বিশিষ্ট)</strong> হয়।</li>
+                </ul>
+            </div>
+            
+            <div class="p-8 bg-amber-50 border-l-8 border-amber-500 rounded-r-2xl mt-10">
+                <strong>মনে রাখবেন:</strong> মুদাফ কখনও 'আল' গ্রহণ করে না, কিন্তু মুদাফুন ইলাইহি মারিফা বা নাকিরা হতে পারে।
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+                <div class="example-box">
+                    <p class="text-xl">আল্লাহর কিতাব</p>
+                    <div class="arabic"><span class="clickable-word" data-info="মুদাফ: কিতাব">كِتَابُ</span> <span class="clickable-word" data-info="মুদাফুন ইলাইহি: আল্লাহ (মাজরুর)">اللَّهِ</span></div>
+                </div>
+                <div class="example-box">
+                    <p class="text-xl">মসজিদের দরজা</p>
+                    <div class="arabic">بَابُ الْمَسْجِدِ</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-20 pb-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-t-2 border-emerald-100 pt-12">
+                <a href="chapter1-5.html" class="nav-btn px-10 py-5 bg-slate-800 text-white rounded-2xl font-bold shadow-lg hover:bg-slate-900 flex items-center gap-3">
+                    <span>←</span> মডিউল ১: প্রাথমিক ভিত্তি
+                </a>
+
+                <a href="index.html" class="nav-btn px-10 py-5 bg-emerald-600 text-white rounded-2xl font-bold shadow-lg shadow-emerald-200 hover:bg-emerald-700 flex items-center gap-3">
+                    🏠 Home
+                </a>
+
+                <a href="chapter11-15.html" class="nav-btn px-10 py-5 bg-blue-600 text-white rounded-2xl font-bold shadow-lg shadow-blue-200 hover:bg-blue-700 flex items-center gap-3">
+                    মডিউল ৩: এরব ও ক্রিয়া <span>→</span>
+                </a>
+            </div>
+            <p class="text-center mt-12 text-violet-900/40 font-medium">© মোঃ আনিছুর রহমান | আরবী ব্যাকরণ</p>
+        </footer>
+    </div>
+
+    <div id="modal" class="fixed inset-0 bg-black/60 backdrop-blur-md hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white p-10 rounded-3xl max-w-lg w-full shadow-2xl animate-in zoom-in duration-300">
+            <h3 class="text-3xl font-bold text-emerald-900 mb-4">ব্যাকরণগত তথ্য</h3>
+            <p id="modal-text" class="text-xl text-slate-600 leading-relaxed bg-emerald-50 p-6 rounded-2xl"></p>
+            <button onclick="closeModal()" class="mt-8 w-full bg-emerald-600 text-white py-4 rounded-xl font-bold text-xl hover:bg-emerald-700 transition-colors">বন্ধ করুন</button>
+        </div>
+    </div>
+
+    <script>
+        function closeModal() { document.getElementById('modal').classList.add('hidden'); }
+        document.querySelectorAll('.clickable-word').forEach(word => {
+            word.onclick = () => {
+                document.getElementById('modal-text').innerText = word.dataset.info;
+                document.getElementById('modal').classList.remove('hidden');
+            }
+        });
+        
+        window.onkeydown = (e) => { if(e.key === 'Escape') closeModal(); }
+    </script>
+</body>
+</html>

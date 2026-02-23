@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>অধ্যায় ১-৫: আরবী ব্যাকরণের মৌলিক ভিত্তি - পূর্ণাঙ্গ মডিউল</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #0369a1; --accent: #0ea5e9; --bg: #f8fafc; }
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: var(--bg); color: #334155; line-height: 1.8; }
+        .arabic { font-family: 'Amiri', serif; direction: rtl; font-size: 2.8rem; color: #0c4a6e; }
+        .clickable-word { cursor: pointer; border-bottom: 3px dashed var(--accent); padding: 0 4px; transition: 0.3s; position: relative; }
+        .clickable-word:hover { background: #e0f2fe; color: #0369a1; transform: translateY(-2px); }
+        .lesson-card { background: white; border-radius: 2.5rem; padding: 4rem; margin-bottom: 5rem; box-shadow: 0 10px 40px rgba(0,0,0,0.04); border-top: 15px solid var(--primary); }
+        .rule-box { background: #f0f9ff; border-left: 8px solid var(--primary); padding: 2.5rem; margin: 2rem 0; border-radius: 0 1.5rem 1.5rem 0; }
+        .example-row { display: flex; align-items: center; justify-content: space-between; padding: 2rem; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 1.5rem; margin-bottom: 1.5rem; transition: 0.3s; }
+        .example-row:hover { border-color: var(--accent); box-shadow: 0 8px 20px rgba(14, 165, 233, 0.1); }
+        .badge { background: #bae6fd; color: #0369a1; padding: 6px 16px; border-radius: 999px; font-weight: 700; font-size: 0.9rem; }
+        .nav-btn { transition: all 0.3s ease; }
+        .nav-btn:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body class="p-4 md:p-12 lg:p-20">
+
+    <div class="max-w-6xl mx-auto">
+        <header class="text-center mb-24">
+            <h1 class="text-7xl font-black text-slate-900 mb-6">আরবী ব্যাকরণের মৌলিক ভিত্তি</h1>
+            <p class="text-2xl text-sky-600 font-bold tracking-widest uppercase">মডিউল ১: অধ্যায় ০১ - ০৫ (ভিত্তি স্থাপন)</p>
+            <div class="h-1.5 w-64 bg-sky-500 mx-auto mt-8 rounded-full"></div>
+        </header>
+
+        <section id="ch1" class="lesson-card">
+            <div class="flex items-center gap-6 mb-12">
+                <span class="bg-sky-700 text-white w-20 h-20 flex items-center justify-center rounded-3xl text-4xl font-black shadow-lg">০১</span>
+                <h2 class="text-5xl font-black text-slate-800">কালিমাহ বা শব্দ (Parts of Speech)</h2>
+            </div>
+            
+            <div class="prose prose-xl max-w-none">
+                <h3 class="text-3xl font-bold text-sky-800 mb-6 underline decoration-sky-200">বিস্তারিত সংজ্ঞা ও প্রকারভেদ:</h3>
+                <p class="text-justify text-slate-600 mb-8 text-xl">
+                    আরবী ভাষায় অর্থবোধক শব্দকে <strong>কালিমাহ (الكلمة)</strong> বলা হয়। মানুষের মুখ দিয়ে নির্গত প্রতিটি অর্থপূর্ণ ধ্বনিই হলো কালিমাহ। ইংরেজি গ্রামারে পার্টস অফ স্পীচ ৮ প্রকার হলেও আরবী ব্যাকরণে একে প্রধানত ৩টি ভাগে ভাগ করা হয়েছে। এই তিনটি প্রকারের মাধ্যমেই সমগ্র আরবী ভাষা গঠিত।
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8 my-12">
+                    <div class="p-8 bg-sky-50 rounded-3xl border-2 border-sky-100 text-center shadow-sm">
+                        <h4 class="text-2xl font-bold text-sky-900 mb-4">১. ইসম (اسم)</h4>
+                        <p class="text-slate-600 italic">কোনো ব্যক্তি, বস্তু, স্থান বা গুণের নাম। (Noun/Adjective)</p>
+                    </div>
+                    <div class="p-8 bg-sky-50 rounded-3xl border-2 border-sky-100 text-center shadow-sm">
+                        <h4 class="text-2xl font-bold text-sky-900 mb-4">২. ফেল (ফেল)</h4>
+                        <p class="text-slate-600 italic">যাতে কোনো কাজ করা বা হওয়া বোঝায় এবং সময় থাকে। (Verb)</p>
+                    </div>
+                    <div class="p-8 bg-sky-50 rounded-3xl border-2 border-sky-100 text-center shadow-sm">
+                        <h4 class="text-2xl font-bold text-sky-900 mb-4">৩. হরফ (حرف)</h4>
+                        <p class="text-slate-600 italic">যা অন্য শব্দ ছাড়া নিজের অর্থ পুরোপুরি দেয় না। (Particle)</p>
+                    </div>
+                </div>
+
+                <h3 class="text-3xl font-bold text-slate-800 mt-16 mb-10 text-center">কালিমাহ-র ৫টি উদাহরণ:</h3>
+                <div class="space-y-6">
+                    <div class="example-row">
+                        <div><span class="badge mb-2 inline-block">ইসম (ব্যক্তি)</span><p class="text-2xl font-bold">১. মুহাম্মাদ (সা.)</p></div>
+                        <div class="arabic"><span class="clickable-word" data-info="ইসম: এটি একজন ব্যক্তির নাম">مُحَمَّدٌ</span></div>
+                    </div>
+                    <div class="example-row">
+                        <div><span class="badge mb-2 inline-block">ফেল (অতীত)</span><p class="text-2xl font-bold">২. সে সাহায্য করেছে</p></div>
+                        <div class="arabic"><span class="clickable-word" data-info="ফেল: এটি একটি অতীতকালীন ক্রিয়া">نَصَرَ</span></div>
+                    </div>
+                    <div class="example-row">
+                        <div><span class="badge mb-2 inline-block">হরফ (অব্যয়)</span><p class="text-2xl font-bold">৩. মধ্যে / ভেতরে</p></div>
+                        <div class="arabic"><span class="clickable-word" data-info="হরফ: এটি হারফুল জার">فِي</span></div>
+                    </div>
+                    <div class="example-row">
+                        <div><span class="badge mb-2 inline-block">ইসম (স্থান)</span><p class="text-2xl font-bold">৪. মক্কা শহর</p></div>
+                        <div class="arabic"><span class="clickable-word" data-info="ইসম: একটি নির্দিষ্ট স্থানের নাম">مَكَّةُ</span></div>
+                    </div>
+                    <div class="example-row">
+                        <div><span class="badge mb-2 inline-block">ফেল (বর্তমান)</span><p class="text-2xl font-bold">৫. সে পড়ছে / পড়বে</p></div>
+                        <div class="arabic"><span class="clickable-word" data-info="ফেল: এটি একটি বর্তমান/ভবিষ্যৎ কাল">يَقْرَأُ</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ch2" class="lesson-card" style="border-top-color: #0ea5e9;">
+            <div class="flex items-center gap-6 mb-12">
+                <span class="bg-sky-500 text-white w-20 h-20 flex items-center justify-center rounded-3xl text-4xl font-black shadow-lg">০২</span>
+                <h2 class="text-5xl font-black text-slate-800">হরফে শামসিয়াহ ও কমারিয়াহ (Solar & Lunar)</h2>
+            </div>
+            
+            <div class="prose prose-xl max-w-none">
+                <p class="text-justify text-slate-600 mb-8 text-xl">
+                    আরবী বর্ণমালার ২৮টি বর্ণকে 'আল' (ال) যুক্ত করার সময় উচ্চারণের ভিত্তিতে দুই ভাগে ভাগ করা হয়। এটি সঠিক উচ্চারণের জন্য অপরিহার্য।
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8 my-10">
+                    <div class="p-8 bg-orange-50 rounded-3xl border-2 border-orange-100">
+                        <h4 class="text-3xl font-black text-orange-800 mb-4 italic">১. শামসিয়াহ (Sun Letters)</h4>
+                        <p class="text-slate-600 mb-4">এখানে 'লাম' উচ্চারিত হয় না, পরের বর্ণে তাশদীদ হয়। বর্ণসংখ্যা ১৪টি।</p>
+                        <p class="arabic text-2xl">ت ث د ذ ر ز س ش ص ض ط ظ ل ن</p>
+                    </div>
+                    <div class="p-8 bg-indigo-50 rounded-3xl border-2 border-indigo-100">
+                        <h4 class="text-3xl font-black text-indigo-800 mb-4 italic">২. কমারিয়াহ (Moon Letters)</h4>
+                        <p class="text-slate-600 mb-4">এখানে 'লাম' স্পষ্ট উচ্চারিত হয়। বর্ণসংখ্যা ১৪টি।</p>
+                        <p class="arabic text-2xl">ا ب ج ح خ ع غ ফ ক ম ও ه ي</p>
+                    </div>
+                </div>
+
+                <h3 class="text-3xl font-bold text-slate-800 mt-12 mb-10">৫টি ব্যবহারিক উদাহরণ:</h3>
+                <div class="space-y-6">
+                    <div class="example-row border-orange-200">
+                        <p class="text-xl">১. সূর্য (আশ-শামসু)</p>
+                        <div class="arabic"><span class="clickable-word" data-info="শামসিয়াহ: 'লাম' সাইলেন্ট হয়ে শীনের সাথে যুক্ত হয়েছে">الشَّمْسُ</span></div>
+                    </div>
+                    <div class="example-row border-indigo-200">
+                        <p class="text-xl">২. চাঁদ (আল-কমারু)</p>
+                        <div class="arabic"><span class="clickable-word" data-info="কমারিয়াহ: 'লাম' স্পষ্ট উচ্চারিত হয়েছে">الْقَمَرُ</span></div>
+                    </div>
+                    <div class="example-row border-orange-200">
+                        <p class="text-xl">৩. ব্যবসায়ী (আত-তাজিরু)</p>
+                        <div class="arabic">التَّاجِرُ</div>
+                    </div>
+                    <div class="example-row border-indigo-200">
+                        <p class="text-xl">৪. বাগান (আল-জান্নাতু)</p>
+                        <div class="arabic">الْجَنَّةُ</div>
+                    </div>
+                    <div class="example-row border-orange-200">
+                        <p class="text-xl">৫. কাপড় (আস-সাওবু)</p>
+                        <div class="arabic">الثَّوْبُ</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ch3" class="lesson-card" style="border-top-color: #0369a1;">
+            <div class="flex items-center gap-6 mb-12">
+                <span class="bg-sky-700 text-white w-20 h-20 flex items-center justify-center rounded-3xl text-4xl font-black shadow-lg">০৩</span>
+                <h2 class="text-5xl font-black text-slate-800">মারিফা ও নাকিরা (Definite & Indefinite)</h2>
+            </div>
+            
+            <div class="prose prose-xl max-w-none">
+                <p class="text-justify text-slate-600 mb-8">ইসম-কে তার নির্দিষ্টতা ও অনির্দিষ্টতার ভিত্তিতে দুই ভাগে ভাগ করা হয়। এটি ইংরেজি <strong>'A'</strong> এবং <strong>'The'</strong> এর ব্যবহারের মতো।</p>
+
+                <div class="rule-box shadow-sm">
+                    <h4 class="text-2xl font-bold mb-4">মৌলিক পার্থক্য:</h4>
+                    <p><strong>১. নাকিরা (النكرة):</strong> সাধারণ কোনো বস্তু বা ব্যক্তিকে বোঝায়। শব্দের শেষে <strong>তানউইন (ً ٍ ٌ)</strong> থাকে। যেমন: قَلَمٌ (একটি কলম)।</p>
+                    <p class="mt-4"><strong>২. মারিফা (المعرفة):</strong> নির্দিষ্ট কোনো বস্তু বা ব্যক্তিকে বোঝায়। শব্দের শুরুতে <strong>'আল' (ال)</strong> যুক্ত হয় এবং শেষে তানউইন উঠে গিয়ে একটি হরকত হয়। যেমন: الْقَلَمُ (কলমটি)।</p>
+                </div>
+
+                <h3 class="text-3xl font-bold text-slate-800 mt-12 mb-10">৫টি তুলনামূলক উদাহরণ:</h3>
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="example-row bg-slate-50">
+                        <div class="text-xl">১. একটি ঘর <span class="mx-4">→</span> ঘরটি</div>
+                        <div class="arabic"><span class="clickable-word" data-info="নাকিরা: অনির্দিষ্ট">بَيْتٌ</span> <span class="mx-6 text-slate-300">|</span> <span class="clickable-word" data-info="মারিফা: আল যুক্ত হয়ে নির্দিষ্ট">الْبَيْتُ</span></div>
+                    </div>
+                    <div class="example-row bg-slate-50">
+                        <div class="text-xl">২. একটি বই <span class="mx-4">→</span> বইটি</div>
+                        <div class="arabic"> كِتَابٌ <span class="mx-6 text-slate-300">|</span> الْكِتَابُ</div>
+                    </div>
+                    <div class="example-row bg-slate-50">
+                        <div class="text-xl">৩. একজন ছাত্র <span class="mx-4">→</span> ছাত্রটি</div>
+                        <div class="arabic">طَالِبٌ <span class="mx-6 text-slate-300">|</span> الطَّالِبُ</div>
+                    </div>
+                    <div class="example-row bg-slate-50">
+                        <div class="text-xl">৪. একটি মসজিদ <span class="mx-4">→</span> মসজিদটি</div>
+                        <div class="arabic">مَسْجِدٌ <span class="mx-6 text-slate-300">|</span> الْمَسْجِدُ</div>
+                    </div>
+                    <div class="example-row bg-slate-50">
+                        <div class="text-xl">৫. একজন ব্যক্তি <span class="mx-4">→</span> ব্যক্তিটি</div>
+                        <div class="arabic">رَجُلٌ <span class="mx-6 text-slate-300">|</span> الرَّজُلُ</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ch4" class="lesson-card" style="border-top-color: #10b981;">
+            <div class="flex items-center gap-6 mb-12">
+                <span class="bg-emerald-600 text-white w-20 h-20 flex items-center justify-center rounded-3xl text-4xl font-black shadow-lg">০৪</span>
+                <h2 class="text-5xl font-black text-slate-800">মুজাক্কার ও মুয়ান্নাস (Gender)</h2>
+            </div>
+            
+            <div class="prose prose-xl max-w-none">
+                <p class="text-justify text-slate-600 mb-8 text-xl">
+                    আরবী ভাষায় ইসম লিঙ্গভেদে দুই প্রকার: <strong>মুজাক্কার (পুংলিঙ্গ)</strong> এবং <strong>মুয়ান্নাস (স্ত্রীলিঙ্গ)</strong>।
+                </p>
+
+                <div class="rule-box shadow-sm" style="background: #ecfdf5; border-left-color: #10b981;">
+                    <h4 class="text-2xl font-bold mb-4 text-emerald-900">মুয়ান্নাস চেনার ৪টি প্রধান নিয়ম:</h4>
+                    <p><strong>১. শব্দের শেষে গোল তা (ة):</strong> অধিকাংশ মুয়ান্নাস শব্দের শেষে এটি থাকে। যেমন: <span class="arabic text-xl">مَدْرَسَةٌ</span></p>
+                    <p class="mt-2"><strong>২. প্রকৃত স্ত্রীবাচক:</strong> মানুষ বা প্রাণীর ক্ষেত্রে যারা বাস্তবে নারী। যেমন: <span class="arabic text-xl">أُمٌّ</span> (মা), <span class="arabic text-xl">بِنْتٌ</span> (মেয়ে)।</p>
+                    <p class="mt-2"><strong>৩. জোড়া জোড়া অঙ্গ:</strong> শরীরের যেসব অঙ্গ দুটি করে আছে। যেমন: <span class="arabic text-xl">يَدٌ</span> (হাত), <span class="arabic text-xl">عَيْنٌ</span> (চোখ)।</p>
+                    <p class="mt-2"><strong>৪. দেশ ও শহরের নাম:</strong> ভৌগোলিক স্থানের নাম সাধারণত মুয়ান্নাস হয়। যেমন: <span class="arabic text-xl">مِصْرُ</span> (মিশর)।</p>
+                </div>
+
+                <h3 class="text-3xl font-bold text-slate-800 mt-12 mb-10 text-center">৫টি তুলনামূলক উদাহরণ:</h3>
+                <div class="space-y-6">
+                    <div class="example-row border-emerald-100">
+                        <p class="text-xl">১. মুসলিম (পুরুষ) → মুসলিম (নারী)</p>
+                        <div class="arabic"><span class="clickable-word" data-info="মুজাক্কার: সাধারণ রূপ">مُسْلِمٌ</span> <span class="mx-4">|</span> <span class="clickable-word" data-info="মুয়ান্নাস: গোল 'তা' যুক্ত হয়েছে">مُسْلِمَةٌ</span></div>
+                    </div>
+                    <div class="example-row border-emerald-100">
+                        <p class="text-xl">২. সুন্দর (পুং) → সুন্দর (স্ত্রী)</p>
+                        <div class="arabic">جَمِيلٌ | جَمِيلَةٌ</div>
+                    </div>
+                    <div class="example-row border-emerald-100">
+                        <p class="text-xl">৩. বাবা → মা (প্রকৃত লিঙ্গ)</p>
+                        <div class="arabic">أَبٌ | أُمٌّ</div>
+                    </div>
+                    <div class="example-row border-emerald-100">
+                        <p class="text-xl">৪. পা (জোড়া অঙ্গ হিসেবে মুয়ান্নাস)</p>
+                        <div class="arabic"><span class="clickable-word" data-info="মুয়ান্নাস: শরীরের জোড়া অঙ্গের নিয়মে">رِجْلٌ</span></div>
+                    </div>
+                    <div class="example-row border-emerald-100">
+                        <p class="text-xl">৫. মক্কা শহর (স্থানের নাম)</p>
+                        <div class="arabic"><span class="clickable-word" data-info="মুয়ান্নাস: শহর/দেশের নাম মুয়ান্নাস হয়">مَكَّةُ</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ch5" class="lesson-card" style="border-top-color: #0c4a6e;">
+            <div class="flex items-center gap-6 mb-12">
+                <span class="bg-sky-900 text-white w-20 h-20 flex items-center justify-center rounded-3xl text-4xl font-black shadow-lg">০৫</span>
+                <h2 class="text-5xl font-black text-slate-800">হারফুল জার (Prepositions)</h2>
+            </div>
+            
+            <div class="prose prose-xl max-w-none">
+                <p class="text-slate-600 mb-8">হারফুল জার হলো এমন কিছু হরফ যা কোনো ইসমের আগে বসে এবং ওই ইসমের শেষ অক্ষরে <strong>জের (কাসরা)</strong> প্রদান করে। আরবী সাহিত্যে এর গুরুত্ব অপরিসীম।</p>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+                    <div class="p-6 bg-blue-50 text-center rounded-2xl shadow-sm hover:bg-blue-100 transition"><span class="arabic text-3xl">فِي</span><br>মধ্যে</div>
+                    <div class="p-6 bg-blue-50 text-center rounded-2xl shadow-sm hover:bg-blue-100 transition"><span class="arabic text-3xl">عَلَى</span><br>উপরে</div>
+                    <div class="p-6 bg-blue-50 text-center rounded-2xl shadow-sm hover:bg-blue-100 transition"><span class="arabic text-3xl">مِنْ</span><br>থেকে</div>
+                    <div class="p-6 bg-blue-50 text-center rounded-2xl shadow-sm hover:bg-blue-100 transition"><span class="arabic text-3xl">إِلَى</span><br>দিকে</div>
+                </div>
+
+                <h3 class="text-3xl font-bold text-slate-800 mt-12 mb-10">৫টি প্র্যাকটিক্যাল উদাহরণ (বাক্য গঠন):</h3>
+                <div class="space-y-6">
+                    <div class="example-row">
+                        <p class="text-xl">১. ঘরের মধ্যে</p>
+                        <div class="arabic">فِي <span class="clickable-word" data-info="মাজরুর: হারফুল জারের পর ইসম মাজরুর হয় এবং শেষ অক্ষরে জের পায়">الْبَيْتِ</span></div>
+                    </div>
+                    <div class="example-row">
+                        <p class="text-xl">২. টেবিলের উপরে</p>
+                        <div class="arabic">عَلَى الْمَكْتَبِ</div>
+                    </div>
+                    <div class="example-row">
+                        <p class="text-xl">৩. মসজিদ থেকে</p>
+                        <div class="arabic">مِنَ الْمَسْجِدِ</div>
+                    </div>
+                    <div class="example-row">
+                        <p class="text-xl">৪. বাজারের দিকে</p>
+                        <div class="arabic">إِلَى السُّوقِ</div>
+                    </div>
+                    <div class="example-row">
+                        <p class="text-xl">৫. কলম দিয়ে (বি)</p>
+                        <div class="arabic">بِالْقَلَمِ</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mubtada-khabar" class="lesson-card" style="border-top-color: #f59e0b;">
+            <div class="flex items-center gap-6 mb-12">
+                <span class="bg-amber-500 text-white w-20 h-20 flex items-center justify-center rounded-3xl text-4xl font-black shadow-lg">✨</span>
+                <h2 class="text-5xl font-black text-slate-800">মুবতাদা ও খবর (Subject & Predicate)</h2>
+            </div>
+            
+            <div class="prose prose-xl max-w-none">
+                <p class="text-justify text-slate-600 mb-8 text-xl">
+                    আরবী জুমলা ইসমিয়্যাহ (বিশেষ্যমূলক বাক্য) এর দুটি প্রধান অংশ থাকে: <strong>মুবতাদা</strong> এবং <strong>খবর</strong>। এটি একটি পূর্ণাঙ্গ বাক্য গঠন করে।
+                </p>
+
+                <div class="rule-box shadow-sm" style="background: #fffbeb; border-left-color: #f59e0b;">
+                    <h4 class="text-2xl font-bold mb-4 text-amber-900">মৌলিক নিয়মাবলী:</h4>
+                    <p><strong>মুবতাদা (المبتدأ):</strong> যার সম্পর্কে কিছু বলা হয় (Subject)। এটি সাধারণত বাক্যের শুরুতে বসে এবং <strong>মারিফা</strong> (নির্দিষ্ট) হয়।</p>
+                    <p class="mt-4"><strong>খবর (الخبر):</strong> মুবতাদা সম্পর্কে যা বলা হয় (Predicate)। এটি সাধারণত <strong>নাকিরা</strong> (অনির্দিষ্ট) হয়।</p>
+                </div>
+
+                <h3 class="text-3xl font-bold text-slate-800 mt-12 mb-10 text-center">মুবতাদা-খবরের ব্যবহারিক উদাহরণ:</h3>
+                <div class="space-y-6">
+                    <div class="example-row border-amber-100">
+                        <div><span class="badge mb-2 inline-block" style="background: #fde68a;">বাক্য ১</span><p class="text-2xl font-bold">আল্লাহ মহান</p></div>
+                        <div class="arabic">
+                            <span class="clickable-word" data-info="মুবতাদা: আল্লাহ (নির্দিষ্ট)">اللَّهُ</span> 
+                            <span class="clickable-word" data-info="খবর: মহান (অনির্দিষ্ট)">أَكْبَرُ</span>
+                        </div>
+                    </div>
+                    <div class="example-row border-amber-100">
+                        <div><span class="badge mb-2 inline-block" style="background: #fde68a;">বাক্য ২</span><p class="text-2xl font-bold">বাড়িটি সুন্দর</p></div>
+                        <div class="arabic">
+                            <span class="clickable-word" data-info="মুবতাদা: আল-বাইতু (নির্দিষ্ট)">الْبَيْتُ</span> 
+                            <span class="clickable-word" data-info="খবর: জামিলুন (অনির্দিষ্ট)">جَمِيلٌ</span>
+                        </div>
+                    </div>
+                    <div class="example-row border-amber-100">
+                        <div><span class="badge mb-2 inline-block" style="background: #fde68a;">বাক্য ৩</span><p class="text-2xl font-bold">ছাত্রটি মেধাবী</p></div>
+                        <div class="arabic">
+                            الطَّالِبُ ذَكِيٌّ
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-20 pb-10">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-t-2 border-slate-200 pt-12">
+                <button class="nav-btn px-8 py-4 bg-slate-300 text-slate-500 rounded-2xl font-bold cursor-not-allowed opacity-60">
+                    ← মডিউল ১: প্রাথমিক ভিত্তি
+                </button>
+
+                <a href="index.html" class="nav-btn px-10 py-4 bg-sky-700 text-white rounded-2xl font-bold shadow-lg shadow-sky-200 hover:bg-sky-800 text-center">
+                    🏠 Home
+                </a>
+
+                <a href="chapter6-10.html" class="nav-btn px-10 py-4 bg-emerald-600 text-white rounded-2xl font-bold shadow-lg shadow-emerald-100 hover:bg-emerald-700 text-center">
+                    মডিউল ২: বাক্য গঠন →
+                </a>
+            </div>
+            <p class="text-center mt-12 text-violet-900/40 font-medium">© মোঃ আনিছুর রহমান | আরবী ব্যাকরণ</p>
+        </footer>
+    </div>
+
+    <div id="modal" class="fixed inset-0 bg-slate-900/90 backdrop-blur-sm hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-[3rem] p-12 max-w-xl w-full shadow-2xl border-t-[12px] border-sky-600 animate-in zoom-in duration-300">
+            <h3 class="text-4xl font-black text-slate-900 mb-6">ব্যাকরণগত বিশ্লেষণ</h3>
+            <p id="modal-content" class="text-2xl text-slate-600 leading-relaxed font-medium bg-sky-50 p-8 rounded-3xl italic"></p>
+            <button onclick="closeModal()" class="mt-10 w-full bg-sky-600 text-white py-6 rounded-3xl font-black text-2xl hover:bg-sky-700 shadow-xl shadow-sky-200 transition-all active:scale-95">ঠিক আছে</button>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('modal');
+        const modalContent = document.getElementById('modal-content');
+        document.querySelectorAll('.clickable-word').forEach(word => {
+            word.addEventListener('click', () => {
+                modalContent.innerText = word.getAttribute('data-info');
+                modal.classList.remove('hidden');
+            });
+        });
+        function closeModal() { modal.classList.add('hidden'); }
+        
+        modal.addEventListener('click', (e) => {
+            if(e.target === modal) closeModal();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>অধ্যায় ১৬-২০: সরফ ও উন্নত বাক্য বিশ্লেষণ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #7c3aed; --secondary: #a78bfa; --bg: #f5f3ff; }
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: var(--bg); color: #1e1b4b; scroll-behavior: smooth; }
+        .arabic { font-family: 'Amiri', serif; direction: rtl; font-size: 2.6rem; line-height: 1.6; color: #4c1d95; }
+        .clickable-word { cursor: pointer; border-bottom: 3px dashed var(--primary); padding: 0 4px; transition: 0.3s; }
+        .clickable-word:hover { background-color: #ede9fe; color: #6d28d9; transform: scale(1.05); }
+        .lesson-card { background: white; border-radius: 2.5rem; padding: 4rem; margin-bottom: 5rem; box-shadow: 0 20px 50px rgba(0,0,0,0.05); border-top: 15px solid var(--primary); }
+        .rule-box { background: #fdf2f8; padding: 2rem; border-radius: 1.5rem; border-left: 8px solid #db2777; margin: 2rem 0; }
+        .sarf-table { width: 100%; border-collapse: collapse; margin: 2rem 0; overflow: hidden; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .sarf-table th, .sarf-table td { padding: 1.5rem; border: 1px solid #ddd6fe; text-align: center; }
+        .sarf-table th { background: var(--primary); color: white; }
+        .example-box { background: #faf5ff; border-radius: 1.5rem; padding: 2.5rem; border: 1px solid #ddd6fe; margin-bottom: 1.5rem; transition: 0.3s; }
+        .example-box:hover { box-shadow: 0 10px 20px rgba(124, 58, 237, 0.1); border-color: var(--primary); }
+        .nav-btn { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="p-6 md:p-16">
+
+    <div class="max-w-6xl mx-auto">
+        <header class="text-center mb-24">
+            <h1 class="text-7xl font-black text-violet-950 mb-8">এরাবিক গ্রামার আল্টিমেট</h1>
+            <p class="text-3xl text-violet-700 font-medium">মডিউল ৪: অধ্যায় ১৬ থেকে ২০ (মাস্টার মডিউল)</p>
+            <div class="mt-8 flex justify-center gap-4">
+                <span class="bg-violet-200 px-6 py-2 rounded-full font-bold">সরফ ও রূপান্তর</span>
+                <span class="bg-pink-200 px-6 py-2 rounded-full font-bold">জুমলা বিশ্লেষণ</span>
+            </div>
+        </header>
+
+        <section id="ch16" class="lesson-card">
+            <h2 class="text-5xl font-bold text-violet-900 mb-10 border-b-4 border-violet-100 pb-6">১৬. সরফ - ইসম ও ক্রিয়ার পূর্ণাঙ্গ রূপান্তর</h2>
+            <div class="prose prose-xl max-w-none text-slate-700 leading-loose">
+                <p class="mb-8 text-2xl text-justify"><strong>সরফ (Morphology)</strong> হলো আরবী ব্যাকরণের সেই শাখা যা একটি মূল ধাতু (মাদ্দা) থেকে বিভিন্ন ওজনে শব্দ গঠন নিয়ে আলোচনা করে।</p>
+                
+                
+
+                <div class="rule-box">
+                    <h3 class="text-2xl font-bold text-pink-800 mb-4">ইসমের বিভিন্ন রূপান্তর:</h3>
+                    <ul class="list-none space-y-4">
+                        <li><strong>১. মাদ্দা (Root Letters):</strong> শব্দের মূল ভিত্তি, যা সাধারণত তিনটি অক্ষর হয় (যেমন: ن - ص - ر)।</li>
+                        <li><strong>২. ইসম ফায়েল (Active Participle):</strong> যে কাজটি করে। এটি <span class="arabic text-xl">فَاعِلٌ</span> ওজনে হয়। যেমন: <span class="arabic text-xl">نَاصِرٌ</span> (সাহায্যকারী)।</li>
+                        <li><strong>৩. ইসম মাফউল (Passive Participle):</strong> যার ওপর কাজটি সম্পন্ন হয়। এটি <span class="arabic text-xl">مَفْعُولٌ</span> ওজনে হয়। যেমন: <span class="arabic text-xl">مَنْصُورٌ</span> (সাহায্যপ্রাপ্ত)।</li>
+                        <li><strong>৪. ইসম জরফ (Noun of Place/Time):</strong> কাজ সংগঠনের স্থান বা সময়। যেমন: <span class="arabic text-xl">مَسْجِدٌ</span> (সিজদার জায়গা)।</li>
+                        <li><strong>৫. ইসম ইলাহি/আ’লা (Noun of Tool):</strong> যে যন্ত্রের মাধ্যমে কাজটি হয়। যেমন: <span class="arabic text-xl">مِفْتَاحٌ</span> (চাবি)।</li>
+                    </ul>
+                </div>
+
+                <h3 class="text-3xl font-bold text-violet-800 mb-8 mt-12">ক্রিয়া (Verb) বিশ্লেষণ: মা’লুম ও মাজহুল</h3>
+                <table class="sarf-table">
+                    <thead>
+                        <tr>
+                            <th>ফেল (Verb)</th>
+                            <th>মা’লুম (Active)</th>
+                            <th>মাজহুল (Passive)</th>
+                            <th>অর্থ (মা’লুম)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>মাদী (অতীত)</td>
+                            <td class="arabic">نَصَرَ</td>
+                            <td class="arabic">نُصِرَ</td>
+                            <td>সে সাহায্য করেছে</td>
+                        </tr>
+                        <tr>
+                            <td>মুদারী (বর্তমান)</td>
+                            <td class="arabic">يَنْصُرُ</td>
+                            <td class="arabic">يُنْصَرُ</td>
+                            <td>সে সাহায্য করছে</td>
+                        </tr>
+                        <tr>
+                            <td>আমর (আদেশ)</td>
+                            <td class="arabic">اُنْصُرْ</td>
+                            <td>-</td>
+                            <td>তুমি সাহায্য করো</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="ch17" class="lesson-card" style="border-top-color: #db2777;">
+            <h2 class="text-5xl font-bold text-pink-900 mb-10 border-b-4 border-pink-100 pb-6">১৭. মাজহুল (Passive Voice)</h2>
+            <div class="prose prose-xl max-w-none text-slate-700">
+                <p class="mb-8 text-justify"><strong>মাজহুল</strong> মানে "অজ্ঞাত"। যখন বাক্যে ফায়েল বা কর্তার নাম উল্লেখ থাকে না এবং মাফউল বা কর্ম প্রধান ভূমিকা পালন করে, তখন তাকে মাজহুল বলে।</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-6 bg-pink-50 rounded-2xl border border-pink-200">
+                        <h4 class="font-bold mb-2">মাদী মাজহুল গঠন:</h4>
+                        <p>প্রথম অক্ষরে পেশ এবং শেষ অক্ষরের আগের অক্ষরে জের।</p>
+                        <div class="arabic mt-2 text-3xl">فُعِلَ (كُتِبَ)</div>
+                        <p class="text-sm italic text-pink-700">অর্থাৎ: লেখা হয়েছে।</p>
+                    </div>
+                    <div class="p-6 bg-pink-50 rounded-2xl border border-pink-200">
+                        <h4 class="font-bold mb-2">মুদারী মাজহুল গঠন:</h4>
+                        <p>আলামতে মুদারী-তে পেশ এবং শেষ অক্ষরের আগের অক্ষরে যবর।</p>
+                        <div class="arabic mt-2 text-3xl">يُفْعَلُ (يُقْرَأُ)</div>
+                        <p class="text-sm italic text-pink-700">অর্থাৎ: পড়া হচ্ছে।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ch18" class="lesson-card" style="border-top-color: #ef4444;">
+            <h2 class="text-5xl font-bold text-red-900 mb-10 border-b-4 border-red-100 pb-6">১৮. না বোধক (Negation)</h2>
+            <div class="prose prose-xl max-w-none text-slate-700">
+                <p class="mb-8">আরবী ভাষায় কোনো কাজ বা তথ্যকে অস্বীকার করার জন্য ৩টি প্রধান অব্যয় ব্যবহৃত হয়।</p>
+                <div class="space-y-4">
+                    <div class="example-box">
+                        <p><strong>১. لَا (লা):</strong> সাধারণ না বোধক, যা মুদারী (বর্তমান) কালকে নেতিবাচক করে। <br> <span class="arabic">لَا أَعْلَمُ</span> (আমি জানি না)।</p>
+                    </div>
+                    <div class="example-box">
+                        <p><strong>২. مَا (মা):</strong> সাধারণত মাদী (অতীত) কালের আগে বসে। <br> <span class="arabic">مَا ذَهَبَ</span> (সে যায়নি)।</p>
+                    </div>
+                    <div class="example-box">
+                        <p><strong>৩. لَنْ (লান):</strong> ভবিষ্যতের জন্য কাজটিকে অসম্ভব বা কঠোরভাবে অস্বীকার করতে ব্যবহৃত হয়। <br> <span class="arabic">لَنْ يَنْجَحَ</span> (সে কখনোই সফল হবে না)।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ch19" class="lesson-card" style="border-top-color: #3b82f6;">
+            <h2 class="text-5xl font-bold text-blue-900 mb-10 border-b-4 border-blue-100 pb-6">১৯. ইাস্তফহামিয়া (Interrogative)</h2>
+            <div class="prose prose-xl max-w-none text-slate-700">
+                <p class="mb-8">আরবী ভাষায় প্রশ্ন করার জন্য ব্যবহৃত শব্দগুলোকে <strong>আদাওয়াতুল ইস্তিফহাম</strong> বলা হয়। এগুলো বাক্যের শুরুতে বসে।</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="p-6 bg-blue-50 rounded-2xl"><p class="text-4xl arabic">مَنْ</p><p class="font-bold">কে?</p></div>
+                    <div class="p-6 bg-blue-50 rounded-2xl"><p class="text-4xl arabic">مَا</p><p class="font-bold">কি?</p></div>
+                    <div class="p-6 bg-blue-50 rounded-2xl"><p class="text-4xl arabic">أَيْنَ</p><p class="font-bold">কোথায়?</p></div>
+                    <div class="p-6 bg-blue-50 rounded-2xl"><p class="text-4xl arabic">كَيْفَ</p><p class="font-bold">কেমন?</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ch20" class="lesson-card" style="border-top-color: #0f172a;">
+            <h2 class="text-5xl font-bold text-slate-900 mb-10 border-b-4 border-slate-100 pb-6">২০. জুমলা (ইসমিয়াহ ও ফিলিয়াহ)</h2>
+            <div class="prose prose-xl max-w-none text-slate-700">
+                <p class="mb-8 text-2xl text-justify">বাক্যের গঠন অনুসারে আরবী বাক্যকে দুটি প্রধান ভাগে ভাগ করা যায়:</p>
+                
+                
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="p-10 bg-slate-50 border-4 border-dashed border-slate-200 rounded-3xl">
+                        <h3 class="text-3xl font-bold mb-6 underline decoration-violet-500">১. জুমলাতুল ইসমিয়াহ (Nominal Sentence)</h3>
+                        <p class="mb-4">যদি বাক্যটি কোনো <strong>ইসম (Noun)</strong> দিয়ে শুরু হয়। এর প্রধান দুটি অংশ হলো:</p>
+                        <ul class="list-disc ml-6 mb-4">
+                            <li><strong>মুবতাদা (Subject):</strong> যা সম্পর্কে কিছু বলা হয়।</li>
+                            <li><strong>খবর (Predicate):</strong> যা তথ্য প্রদান করে।</li>
+                        </ul>
+                        <div class="arabic text-center p-4 bg-white rounded-xl shadow-sm">الْعِلْمُ نُورٌ</div>
+                        <p class="text-center font-bold text-violet-700 mt-2">জ্ঞান হলো আলো।</p>
+                    </div>
+
+                    <div class="p-10 bg-slate-50 border-4 border-dashed border-slate-200 rounded-3xl">
+                        <h3 class="text-3xl font-bold mb-6 underline decoration-pink-500">২. জুমলাতুল ফিলিয়াহ (Verbal Sentence)</h3>
+                        <p class="mb-4">যদি বাক্যটি কোনো <strong>ফেল (Verb)</strong> দিয়ে শুরু হয়। এর তিনটি প্রধান অংশ:</p>
+                        <ul class="list-disc ml-6 mb-4">
+                            <li><strong>ফেল (Verb):</strong> ক্রিয়া।</li>
+                            <li><strong>ফায়েল (Doer):</strong> যে কাজটি করছে (সর্বদা মারফু হয়)।</li>
+                            <li><strong>মাফউল (Object):</strong> যাকে কেন্দ্র করে কাজ হয়।</li>
+                        </ul>
+                        <div class="arabic text-center p-4 bg-white rounded-xl shadow-sm">خَلَقَ اللَّهُ الْعَالَمَ</div>
+                        <p class="text-center font-bold text-pink-700 mt-2">আল্লাহ বিশ্বজগত সৃষ্টি করেছেন।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-20 pb-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-t-2 border-violet-200 pt-12">
+                <a href="chapter11-15.html" class="nav-btn px-10 py-5 bg-slate-800 text-white rounded-2xl font-bold shadow-lg hover:bg-slate-900 flex items-center gap-3">
+                    <span>←</span> মডিউল ৩: এরব ও ক্রিয়া
+                </a>
+                <a href="index.html" class="nav-btn px-10 py-5 bg-violet-600 text-white rounded-2xl font-bold shadow-lg shadow-violet-200 hover:bg-violet-700 flex items-center gap-3">
+                    🏠 Home
+                </a>
+                <a href="#" class="nav-btn px-10 py-5 bg-pink-600 text-white rounded-2xl font-bold shadow-lg shadow-pink-200 hover:bg-pink-700 flex items-center gap-3">
+                    নতুন মডিউল আসতেছে <span>→</span>
+                </a>
+            </div>
+            <p class="text-center mt-12 text-violet-900/40 font-medium">© মোঃ আনিছুর রহমান | আরবী ব্যাকরণ</p>
+        </footer>
+    </div>
+
+    <div id="modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white p-12 rounded-3xl max-w-xl w-full shadow-2xl border-t-8 border-violet-600 animate-in zoom-in duration-300">
+            <h3 class="text-3xl font-bold text-violet-900 mb-6">গভীর ব্যাকরণ বিশ্লেষণ</h3>
+            <p id="modal-text" class="text-2xl text-slate-700 leading-relaxed font-medium bg-violet-50 p-6 rounded-2xl"></p>
+            <button onclick="closeModal()" class="mt-10 w-full bg-violet-600 text-white py-5 rounded-2xl font-bold text-xl hover:bg-violet-700 shadow-lg shadow-violet-200 transition">বুঝেছি, ধন্যবাদ!</button>
+        </div>
+    </div>
+
+    <script>
+        function closeModal() { document.getElementById('modal').classList.add('hidden'); }
+        document.querySelectorAll('.clickable-word').forEach(word => {
+            word.onclick = () => {
+                document.getElementById('modal-text').innerText = word.dataset.info;
+                document.getElementById('modal').classList.remove('hidden');
+            }
+        });
+        window.onkeydown = (e) => { if(e.key === 'Escape') closeModal(); }
+    </script>
+</body>
+</html>

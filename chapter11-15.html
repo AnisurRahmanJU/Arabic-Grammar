@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>অধ্যায় ১১-১৫: এরব, বচন ও ক্রিয়ার গভীর বিশ্লেষণ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #d97706; --secondary: #f59e0b; --bg: #fffbeb; }
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: var(--bg); color: #451a03; scroll-behavior: smooth; }
+        .arabic { font-family: 'Amiri', serif; direction: rtl; font-size: 2.5rem; line-height: 1.8; color: #78350f; }
+        .clickable-word { cursor: pointer; border-bottom: 3px dashed var(--primary); padding: 0 4px; transition: 0.3s; }
+        .clickable-word:hover { background-color: #fef3c7; transform: scale(1.05); }
+        .lesson-card { background: white; border-radius: 2.5rem; padding: 4rem; margin-bottom: 5rem; box-shadow: 0 20px 50px rgba(0,0,0,0.05); border-top: 15px solid var(--primary); }
+        .rule-item { background: #fffaf0; padding: 2rem; border-radius: 1.5rem; border: 1px solid #fde68a; border-left: 8px solid var(--primary); }
+        .sarf-table { width: 100%; border-collapse: collapse; margin: 2rem 0; overflow: hidden; border-radius: 1rem; }
+        .sarf-table th, .sarf-table td { padding: 1.2rem; border: 1px solid #fde68a; text-align: center; }
+        .sarf-table th { background: var(--primary); color: white; font-weight: bold; }
+        .example-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .nav-btn { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .nav-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="p-6 md:p-16">
+
+    <div class="max-w-6xl mx-auto">
+        <header class="text-center mb-24">
+            <h1 class="text-7xl font-black text-amber-900 mb-8">এরাবিক ব্যাকরণ মাস্টারক্লাস</h1>
+            <p class="text-3xl text-amber-700 font-medium">মডিউল ৩: অধ্যায় ১১ থেকে ১৫ (বিশাল কন্টেন্ট গাইড)</p>
+            <div class="mt-8 flex justify-center gap-4">
+                <span class="bg-amber-200 px-6 py-2 rounded-full font-bold">ক্রিয়া ও বচন বিশ্লেষণ</span>
+                <span class="bg-orange-200 px-6 py-2 rounded-full font-bold">ইন্টারঅ্যাক্টিভ সরফ টেবিল</span>
+            </div>
+        </header>
+
+        <section id="ch11" class="lesson-card">
+            <h2 class="text-5xl font-bold text-amber-900 mb-10 border-b-4 border-amber-100 pb-6">১১. মারফু, মানসুব ও মাজরুর (I'rab)</h2>
+            <div class="prose prose-xl max-w-none text-amber-950 leading-loose">
+                <p class="mb-8 text-2xl">আরবী ব্যাকরণে ইসমের শেষের অবস্থার পরিবর্তনকে <strong>এরব</strong> বলা হয়। বাক্যে শব্দের ভূমিকা অনুযায়ী এই পরিবর্তন ঘটে। এটি প্রধানত তিন প্রকার:</p>
+                
+                
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="rule-item">
+                        <h4 class="font-bold text-2xl text-amber-800 mb-3">১. রফ' (মারফু)</h4>
+                        <p>কর্তা হিসেবে বসলে ইসম মারফু হয়। এর প্রধান চিহ্ন হলো পেশ বা যম্মাহ।</p>
+                        <p class="arabic text-3xl mt-4">كِتَابٌ</p>
+                    </div>
+                    <div class="rule-item" style="border-left-color: #ea580c;">
+                        <h4 class="font-bold text-2xl text-orange-800 mb-3">২. নাসব (মানসুব)</h4>
+                        <p>কর্ম হিসেবে বসলে ইসম মানসুব হয়। এর প্রধান চিহ্ন হলো যবর বা ফাতহাহ।</p>
+                        <p class="arabic text-3xl mt-4">كِتَابًا</p>
+                    </div>
+                    <div class="rule-item" style="border-left-color: #92400e;">
+                        <h4 class="font-bold text-2xl text-amber-950 mb-3">৩. জার (মাজরুর)</h4>
+                        <p>হারফুল জার বা মুদাফুন ইলাইহি হিসেবে বসলে মাজরুর হয়। এর চিহ্ন জের বা কাসরা।</p>
+                        <p class="arabic text-3xl mt-4">كِتَابٍ</p>
+                    </div>
+                </div>
+
+                <h3 class="text-3xl font-bold mb-8">৫টি গভীর উদাহরণ:</h3>
+                <div class="example-grid">
+                    <div class="p-6 bg-amber-50 rounded-2xl border border-amber-200">
+                        <p class="font-bold mb-2">১. মারফু (ফায়েল)</p>
+                        <div class="arabic text-2xl mb-2">جَاءَ <span class="clickable-word" data-info="ফায়েল: তাই মারফু">زَيْدٌ</span></div>
+                        <p class="text-sm">জায়েদ এসেছে।</p>
+                    </div>
+                    <div class="p-6 bg-amber-50 rounded-2xl border border-amber-200">
+                        <p class="font-bold mb-2">২. মানসুব (মাফউল)</p>
+                        <div class="arabic text-2xl mb-2">رَأَيْتُ <span class="clickable-word" data-info="মাফউল: তাই মানসুব">زَيْدًا</span></div>
+                        <p class="text-sm">আমি জায়েদকে দেখেছি।</p>
+                    </div>
+                    <div class="p-6 bg-amber-50 rounded-2xl border border-amber-200">
+                        <p class="font-bold mb-2">৩. মাজরুর (ইদাফাত)</p>
+                        <div class="arabic text-2xl mb-2">قَلَمُ <span class="clickable-word" data-info="মুদাফুন ইলাইহি: তাই মাজরুর">زَيْدٍ</span></div>
+                        <p class="text-sm">জায়েদের কলম।</p>
+                    </div>
+                    <div class="p-6 bg-amber-50 rounded-2xl border border-amber-200">
+                        <p class="font-bold mb-2">৪. মানসুব (ইন্না এর ইসম)</p>
+                        <div class="arabic text-2xl mb-2">إِنَّ <span class="clickable-word" data-info="ইন্না এর ইসম মানসুব হয়">اللَّهَ</span> مَعَنَا</div>
+                        <p class="text-sm">নিশ্চয়ই আল্লাহ আমাদের সাথে।</p>
+                    </div>
+                    <div class="p-6 bg-amber-50 rounded-2xl border border-amber-200">
+                        <p class="font-bold mb-2">৫. মাজরুর (হারফুল জার)</p>
+                        <div class="arabic text-2xl mb-2">فِي <span class="clickable-word" data-info="হারফুল জারের পরে ইসম মাজরুর হয়">الْمَسْجِدِ</span></div>
+                        <p class="text-sm">মসজিদের মধ্যে।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ch12" class="lesson-card" style="border-top-color: #ea580c;">
+            <h2 class="text-5xl font-bold text-orange-900 mb-10 border-b-4 border-orange-100 pb-6">১২. আদাদ - মুফরাদ, মুসান্না ও জু'মা</h2>
+            <div class="prose prose-xl max-w-none text-amber-950">
+                <p class="mb-8">আরবী ভাষায় বচন বা আদাদ তিন প্রকার। ইংরেজি বা বাংলার মতো শুধু একবচন ও বহুবচন নয়, আরবীতে 'দ্বিবচন' এর জন্য আলাদা রূপ রয়েছে।</p>
+                
+                
+
+                <table class="sarf-table">
+                    <thead>
+                        <tr>
+                            <th>প্রকার</th>
+                            <th>সংজ্ঞা</th>
+                            <th>উদাহরণ (পুং)</th>
+                            <th>উদাহরণ (স্ত্রী)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-bold">মুফরাদ (একবচন)</td>
+                            <td>একটি মাত্র ব্যক্তি বা বস্তু</td>
+                            <td class="arabic text-2xl">مُسْلِمٌ</td>
+                            <td class="arabic text-2xl">مُسْلِمَةٌ</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">মুসান্না (দ্বিবচন)</td>
+                            <td>দুটি বোঝাতে শেষে 'আনি' (انِ) যোগ হয়</td>
+                            <td class="arabic text-2xl">مُسْلِمَانِ</td>
+                            <td class="arabic text-2xl">مُسْلِمَتَانِ</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">জু'মা (বহুবচন)</td>
+                            <td>দুইয়ের অধিক বোঝাতে</td>
+                            <td class="arabic text-2xl">مُسْلِمُونَ</td>
+                            <td class="arabic text-2xl">مُسْلِمَاتٌ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="ch14" class="lesson-card" style="border-top-color: #d97706;">
+            <h2 class="text-5xl font-bold text-amber-900 mb-10 border-b-4 border-amber-100 pb-6">১৪. আতফু (Atf) - সংযোজক অব্যয়</h2>
+            <div class="prose prose-xl max-w-none text-amber-950">
+                <p class="mb-8">দুটি শব্দ বা বাক্যকে যুক্ত করার প্রক্রিয়াকে <strong>আতফু</strong> বলা হয়। যে হরফ দিয়ে যুক্ত করা হয় তাকে 'হারফুল আতফ' বলে। এর প্রধান বৈশিষ্ট্য হলো, সংযোজিত শব্দ (মাতুফ) তার আগের শব্দের (মাতুফ আলাইহি) এরব অনুসরণ করে।</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="rule-item">
+                        <h4 class="font-bold text-2xl text-amber-800 mb-3">প্রধান হারফুল আতফ</h4>
+                        <ul class="list-disc ml-6 space-y-2">
+                            <li><strong>وَ (ওয়া):</strong> এবং (And)</li>
+                            <li><strong>فَ (ফা):</strong> অতঃপর/তারপর (Then - দ্রুততা বোঝাতে)</li>
+                            <li><strong>ثُمَّ (সুম্মা):</strong> তারপর (Then - বিরতি দিয়ে)</li>
+                            <li><strong>أَوْ (আউ):</strong> অথবা (Or)</li>
+                        </ul>
+                    </div>
+                    <div class="rule-item" style="border-left-color: #f59e0b;">
+                        <h4 class="font-bold text-2xl text-amber-800 mb-3">উদাহরণ বিশ্লেষণ</h4>
+                        <div class="arabic text-3xl mb-4 text-center">مُحَمَّدٌ وَ زَيْدٌ</div>
+                        <p class="text-sm">এখানে 'মুহাম্মাদ' মাতুফ আলাইহি এবং 'জায়েদ' মাতুফ। যেহেতু মুহাম্মাদ মারফু, তাই জায়েদও মারফু হয়েছে।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ch15" class="lesson-card" style="border-top-color: #b91c1c;">
+            <h2 class="text-5xl font-bold text-red-900 mb-10 border-b-4 border-red-100 pb-6">১৫. ফিলুন - মাদী, মুদারী ও আমর (Verbs)</h2>
+            <div class="prose prose-xl max-w-none text-slate-800">
+                <p class="mb-8">আরবী ক্রিয়া বা ফেল অত্যন্ত বিজ্ঞানসম্মত। প্রতিটি ফেল একটি মূল ধাতু (Root Letters) থেকে উৎপন্ন হয়। কালের ভিত্তিতে ফেল ৩ প্রকার:</p>
+
+                
+
+                <div class="space-y-12">
+                    <div class="p-8 bg-red-50 rounded-3xl border-2 border-red-100">
+                        <h3 class="text-3xl font-bold text-red-800 mb-6">১. ফেল মাদী (Past Tense)</h3>
+                        <p class="mb-4">অতীতকালে কোনো কাজ সম্পন্ন হওয়া বোঝায়। যেমন: نَصَرَ (সে সাহায্য করেছে)।</p>
+                        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                            <div class="bg-white p-4 rounded-xl text-center shadow-sm"><div class="arabic text-xl">نَصَرَ</div><p class="text-xs">সে (পুং)</p></div>
+                            <div class="bg-white p-4 rounded-xl text-center shadow-sm"><div class="arabic text-xl">نَصَرَا</div><p class="text-xs">তারা ২ (পুং)</p></div>
+                            <div class="bg-white p-4 rounded-xl text-center shadow-sm"><div class="arabic text-xl">نَصَرُوا</div><p class="text-xs">তারা সব (পুং)</p></div>
+                            <div class="bg-white p-4 rounded-xl text-center shadow-sm"><div class="arabic text-xl">نَصَرْتَ</div><p class="text-xs">তুমি (পুং)</p></div>
+                            <div class="bg-white p-4 rounded-xl text-center shadow-sm"><div class="arabic text-xl">نَصَرْتُ</div><p class="text-xs">আমি</p></div>
+                        </div>
+                    </div>
+
+                    <div class="p-8 bg-blue-50 rounded-3xl border-2 border-blue-100">
+                        <h3 class="text-3xl font-bold text-blue-800 mb-6">২. ফেল মুদারী (Present/Future)</h3>
+                        <p class="mb-4">বর্তমান বা ভবিষ্যৎ কালে কোনো কাজ হওয়া বোঝায়। যেমন: يَنْصُرُ (সে সাহায্য করছে/করবে)।</p>
+                        <div class="arabic text-center p-6 bg-white rounded-2xl shadow-inner">
+                            يَنْصُرُ | يَنْصُرَانِ | يَنْصُرُونَ | تَنْصُرُ | تَنْصُرَانِ
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-3xl font-bold mt-12 mb-8">৫টি প্র্যাকটিক্যাল উদাহরণ:</h3>
+                <div class="example-grid">
+                    <div class="p-6 bg-slate-50 rounded-2xl"><div class="arabic text-2xl">كَتَبَ الرِّسَالَةَ</div><p>সে একটি চিঠি লিখেছে।</p></div>
+                    <div class="p-6 bg-slate-50 rounded-2xl"><div class="arabic text-2xl">يَذْهَبُ إِلَى السُّوقِ</div><p>সে বাজারের দিকে যাচ্ছে।</p></div>
+                    <div class="p-6 bg-slate-50 rounded-2xl"><div class="arabic text-2xl">اِقْرَأْ كِتَابَكَ</div><p>তোমার বই পড় (আমর)।</p></div>
+                    <div class="p-6 bg-slate-50 rounded-2xl"><div class="arabic text-2xl">خَلَقَ اللَّهُ الْإِنْسَانَ</div><p>আল্লাহ মানুষকে সৃষ্টি করেছেন।</p></div>
+                    <div class="p-6 bg-slate-50 rounded-2xl"><div class="arabic text-2xl">يَعْلَمُ مَا فِي السَّمَاوَاتِ</div><p>তিনি জানেন যা আসমানে আছে।</p></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-20 pb-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-t-2 border-amber-200 pt-12">
+                <a href="chapter6-10.html" class="nav-btn px-10 py-5 bg-slate-800 text-white rounded-2xl font-bold shadow-lg hover:bg-slate-900 flex items-center gap-3">
+                    <span>←</span> মডিউল ২: বাক্য গঠন
+                </a>
+
+                <a href="index.html" class="nav-btn px-10 py-5 bg-amber-600 text-white rounded-2xl font-bold shadow-lg shadow-amber-200 hover:bg-amber-700 flex items-center gap-3">
+                    🏠 Home
+                </a>
+
+                <a href="chapter16-20.html" class="nav-btn px-10 py-5 bg-orange-600 text-white rounded-2xl font-bold shadow-lg shadow-orange-200 hover:bg-orange-700 flex items-center gap-3">
+                    মডিউল ৪: উন্নত সরফ <span>→</span>
+                </a>
+            </div>
+            <p class="text-center mt-12 text-violet-900/40 font-medium">© মোঃ আনিছুর রহমান | আরবী ব্যাকরণ</p>
+        </footer>
+    </div>
+
+    <div id="modal" class="fixed inset-0 bg-black/70 backdrop-blur-md hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white p-10 rounded-3xl max-w-lg w-full shadow-2xl border-b-8 border-amber-600 animate-in fade-in zoom-in duration-300">
+            <h3 class="text-3xl font-bold text-amber-900 mb-4">ব্যাকরণগত বিশ্লেষণ</h3>
+            <p id="modal-text" class="text-xl text-slate-700 leading-relaxed italic border-l-4 border-amber-200 pl-4"></p>
+            <button onclick="closeModal()" class="mt-8 w-full bg-amber-600 text-white py-4 rounded-xl font-bold text-xl hover:bg-amber-700 transition">বন্ধ করুন</button>
+        </div>
+    </div>
+
+    <script>
+        function closeModal() { document.getElementById('modal').classList.add('hidden'); }
+        document.querySelectorAll('.clickable-word').forEach(word => {
+            word.onclick = () => {
+                document.getElementById('modal-text').innerText = word.dataset.info;
+                document.getElementById('modal').classList.remove('hidden');
+            }
+        });
+        
+        window.onclick = function(event) {
+            let modal = document.getElementById('modal');
+            if (event.target == modal) closeModal();
+        }
+    </script>
+</body>
+</html>
