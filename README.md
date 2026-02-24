@@ -1,2 +1,2 @@
 # Arabic-Grammar-Plus
-Easy Arabic Grammar Course for free.
+Easy Arabic Grammar Course for free
